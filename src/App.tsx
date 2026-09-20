@@ -1,12 +1,19 @@
 import "./styles/theme.css";
 import "./styles/global.css";
+import { Heading } from "./components/heading.tsx";
+import { TimerIcon } from "lucide-react";
 
 export function App() {
   console.log("Oi");
 
   return (
     <div>
-      <h1>Olá Mundo! (do App)</h1>
+      <Heading>
+        Olá mundo 1
+        <button>
+          <TimerIcon />
+        </button>
+      </Heading>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
         necessitatibus consectetur quam. Quisquam sit facilis aliquam corrupti
